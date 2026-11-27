@@ -55,7 +55,7 @@ fun CounterScreen(modifier: Modifier = Modifier) {
         }
         Spacer(Modifier.height(8.dp))
         OutlinedButton(onClick = { count = 0 }) {
-            Text("Rset")
+            Text("Reset")
         }
 
     }
