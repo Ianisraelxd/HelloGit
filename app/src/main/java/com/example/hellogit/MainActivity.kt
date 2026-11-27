@@ -22,6 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.hellogit.ui.theme.HelloGitTheme
+import androidx.compose.material3.OutlinedButton
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,13 +43,21 @@ fun CounterScreen(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
+
     ) {
         Text("Hello, Git!", style = MaterialTheme.typography.headlineMedium)
         Spacer(Modifier.height(16.dp))
         Text("You tapped $count times")
         Spacer(Modifier.height(16.dp))
         Button(onClick = { count++ }) {
+
             Text("Add Onee")
         }
+        Spacer(Modifier.height(8.dp))
+        OutlinedButton(onClick = { count = 0 }) {
+            Text("Reset")
+        }
+
     }
+
 }
