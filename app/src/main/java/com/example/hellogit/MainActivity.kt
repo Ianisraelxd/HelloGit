@@ -51,7 +51,7 @@ fun CounterScreen(modifier: Modifier = Modifier) {
         Spacer(Modifier.height(16.dp))
         Button(onClick = { count++ }) {
 
-            Text("Add Onee")
+            Text("Add One")
         }
         Spacer(Modifier.height(8.dp))
         OutlinedButton(onClick = { count = 0 }) {
