@@ -48,7 +48,7 @@ fun CounterScreen(modifier: Modifier = Modifier) {
         Text("You tapped $count times")
         Spacer(Modifier.height(16.dp))
         Button(onClick = { count++ }) {
-            Text("Add One")
+            Text("Add Onee")
         }
     }
 }
